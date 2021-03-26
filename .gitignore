@@ -1,11 +1,13 @@
-# Byte-compiled / optimized / DLL files
+﻿# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
+venv-start.txt
 .vscode/
 yatube/static/
 yatube/posts/static/
+.vscode/
 
 # C extensions
 *.so
