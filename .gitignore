@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.vscode/
+yatube/static/
+yatube/posts/static/
+
 # C extensions
 *.so
 
