@@ -14,4 +14,5 @@ class PostAdmin(admin.ModelAdmin):
     # это свойство сработает для всех колонок:
     # где пусто - там будет эта строка
 
+
 admin.site.register(Post, PostAdmin)
