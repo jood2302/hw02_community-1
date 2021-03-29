@@ -8,6 +8,7 @@ venv-start.txt
 yatube/static/
 yatube/posts/static/
 .vscode/
+import_view.py
 
 # C extensions
 *.so

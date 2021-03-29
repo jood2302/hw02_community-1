@@ -1,11 +1,12 @@
-from django.db import models
 from django.contrib.auth import get_user_model
+from django.db import models
 
 User = get_user_model()
 
 
 class Group(models.Model):
-    title = models.CharField(max_length=200, primary_key=True)
+    title = models.CharField(max_length=200, blank=False,
+                             unique=True, default='Title of group')
     slug = models.SlugField(unique=True)
     description = models.TextField()
 
@@ -15,9 +16,13 @@ class Group(models.Model):
 
 class Post(models.Model):
     text = models.TextField()
-    pub_date = models.DateTimeField("date published", auto_now_add=True)
+    pub_date = models.DateTimeField('date published', auto_now_add=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE,
-        related_name="posts")
+        related_name='posts')
     group = models.ForeignKey(
-        Group, on_delete=models.CASCADE, blank=True, null=True)
+        Group, on_delete=models.SET_NULL, blank=True, null=True,
+        related_name='group_posts')
+
+    class Meta:
+        ordering = ['-pub_date']
