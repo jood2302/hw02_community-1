@@ -15,6 +15,6 @@ def group_posts(request, slug):
 
 
 def group_index(request):
-    group = get_object_or_404(Group)
+    #group = get_object_or_404(Group)
     groups = Group.objects.all()
-    return render(request, 'group_index.html', {'group': groups})
+    return render(request, 'group_index.html', {'groups': groups})

@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Группы сообщества{% endblock %}
-{% block header %} {% endblock %}
+{% block header %}Группы сообщества{% endblock %}
 {% block content %}
 
-    {% for groups in group %}
-    <h2>{{ groups.title }}</h2>
-    <br>
-    <p>{{ groups.description }}</p>    
+    {% for group in groups %}
+    <p><b><a href="{{ group.slug }}">{{ group.title }}</a></b></p>
+    <p>{{ group.description }}</p>
+    <hr>
     {% if not forloop.last %}
     {% endif %}
     {% endfor %}
