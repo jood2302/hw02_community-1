@@ -7,7 +7,7 @@ User = get_user_model()
 class Group(models.Model):
     title = models.CharField(max_length=200, unique=True,
                              help_text="Title of group. Must not be empty.")
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True, help_text="Short name of Group for URL.")
     description = models.TextField()
 
     class Meta:
