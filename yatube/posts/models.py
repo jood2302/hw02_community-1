@@ -5,10 +5,14 @@ User = get_user_model()
 
 
 class Group(models.Model):
-    title = models.CharField(max_length=200, blank=False,
-                             unique=True, default='Title of group')
+    title = models.CharField(max_length=200, unique=True,
+                             help_text="Title of group. Must not be empty.")
     slug = models.SlugField(unique=True)
     description = models.TextField()
+
+    class Meta:
+        verbose_name = 'Group of posts'
+        verbose_name_plural = 'Groups of posts'
 
     def __str__(self):
         return self.title
@@ -25,4 +29,4 @@ class Post(models.Model):
         related_name='group_posts')
 
     class Meta:
-        ordering = ['-pub_date']
+        ordering = ('-pub_date',)
