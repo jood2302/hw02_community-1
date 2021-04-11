@@ -9,6 +9,7 @@ yatube/static/
 yatube/posts/static/
 .vscode/
 import_view.py
+*.back
 
 # C extensions
 *.so
