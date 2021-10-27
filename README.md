@@ -30,9 +30,7 @@
 
 ```
 git clone https://github.com/coherentus/hw02_community
-```
 
-```
 cd https://github.com/coherentus/hw02_community
 ```
 
@@ -65,7 +63,7 @@ pip install -r requirements.txt
 Выполнить миграции:
 
 ```
-cd yatube_api
+cd yatube
 python3 manage.py migrate
 ```
 
