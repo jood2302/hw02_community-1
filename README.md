@@ -77,4 +77,17 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 
+Создать суперпользователя Django:
+
+```
+python3 manage.py createsuperuser
+```
+
+Сам проект и админ-панель по адресам:
+
+```
+http://127.0.0.1:8000
+http://127.0.0.1:8000/admin
+```
+
 ***
