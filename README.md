@@ -23,3 +23,58 @@
 * Пользователь может перейти на страницу любого сообщества, где отображаются десять последних публикаций из этой группы.
 
 ***
+
+Разворачивание проекта:
+
+Клонировать репозиторий и перейти в его папку в командной строке:
+
+```
+git clone https://github.com/coherentus/hw02_community
+```
+
+```
+cd https://github.com/coherentus/hw02_community
+```
+
+Cоздать и активировать виртуальное окружение:
+
+```
+python3 -m venv venv
+```
+
+Для *nix-систем и MacOS:
+
+```
+source venv/bin/activate
+```
+
+Для windows-систем:
+
+```
+source venv/Scripts/activate
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+python3 -m pip install --upgrade pip
+```
+
+```
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+
+```
+cd yatube_api
+python3 manage.py migrate
+```
+
+Запустить проект:
+
+```
+python3 manage.py runserver
+```
+
+***
