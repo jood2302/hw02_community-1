@@ -30,8 +30,7 @@
 
 ```
 git clone https://github.com/coherentus/hw02_community
-
-cd https://github.com/coherentus/hw02_community
+cd hw02_community
 ```
 
 Cоздать и активировать виртуальное окружение:
