@@ -58,9 +58,7 @@ source venv/Scripts/activate
 
 ```
 python3 -m pip install --upgrade pip
-```
 
-```
 pip install -r requirements.txt
 ```
 
@@ -87,6 +85,7 @@ python3 manage.py createsuperuser
 
 ```
 http://127.0.0.1:8000
+
 http://127.0.0.1:8000/admin
 ```
 
