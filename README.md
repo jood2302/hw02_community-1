@@ -4,7 +4,7 @@
 
 ## студент  Ковылин Василий
 
-## Учебный проект sprint_3  Знакомство с фреймворком Django.
+## Учебный проект sprint_3.  Знакомство с фреймворком Django.
 
 ***
 
@@ -56,7 +56,6 @@ source venv/Scripts/activate
 
 ```
 python3 -m pip install --upgrade pip
-
 pip install -r requirements.txt
 ```
 
